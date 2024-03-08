@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Артем, нажми сюда!</title>
+    <style>
+        body {
+            background-color: pink;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+        button {
+            background-color: purple;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>АРТЕМ НАЖМИ СЮДА</h1>
+    <button id="playButton">СЮДА</button>
+    <audio id="audio" src="song.mp3"></audio>
+    <script>
+        const playButton = document.getElementById('playButton');
+        const audio = document.getElementById('audio');
+        
+        playButton.addEventListener('click', function() {
+            audio.play();
+            playButton.innerHTML = "Проебешь Викторию, поедешь на СВО бебебе";
+        });
+    </script>
+</body>
+</html
